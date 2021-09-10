@@ -37,7 +37,7 @@ public class MetricsCLIOptions implements CLIOptions<MetricsConfiguration.Builde
       hidden = true,
       names = {IDLE_TIMEOUT_FLAG},
       paramLabel = "<INTEGER>",
-      description = "HTTP timeout in seconds for metrics connections (default: ${DEFAULT-VALUE})",
+      description = "Timeout for metrics TCP connections, in seconds (default: ${DEFAULT-VALUE})",
       arity = "1")
   private int idleTimeout = MetricsConfiguration.DEFAULT_METRICS_IDLE_TIMEOUT_SECONDS;
 
