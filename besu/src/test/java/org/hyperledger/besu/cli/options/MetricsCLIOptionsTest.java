@@ -27,8 +27,9 @@ public class MetricsCLIOptionsTest
 
   @Override
   MetricsConfiguration.Builder createCustomizedDomainObject() {
-    return MetricsConfiguration.builder()
-        .timersEnabled(!MetricsConfiguration.DEFAULT_TIMERS_ENABLED);
+    return MetricsConfiguration.builder();
+    // .timersEnabled(!MetricsConfiguration.DEFAULT_METRICS_TIMERS_ENABLED)
+    // .idleTimeout(MetricsConfiguration.DEFAULT_METRICS_IDLE_TIMEOUT);
   }
 
   @Override
